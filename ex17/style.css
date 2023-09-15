@@ -1,0 +1,22 @@
+body{background-image: linear-gradient(black, white);}
+
+    main{border-radius: 10px;
+    background-color:blue;
+    box-shadow: 5px 5px 15px;
+    width: 800px;
+    padding: 20px;
+    margin: auto;}
+
+h1{
+    color: #ffff;
+}
+h1#principal{
+    text-align: center;
+}
+h2{
+    color: #ffff;
+}
+h2.basic{color: chartreuse;}
+p{
+    color: #ffff;
+}

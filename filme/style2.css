@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .carousel-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Control the carousel animation */
+  .carousel.active-slide {
+    transform: translateX(-100%);
+  }
+  
+  /* Additional styling for responsiveness */
+  @media screen and (max-width: 768px) {
+    .carousel {
+      flex-direction: column;
+      height: 100vh;
+    }
+  
+    .carousel.active-slide {
+      transform: translateY(-100%);
+    }
+  }

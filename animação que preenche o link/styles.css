@@ -1,0 +1,36 @@
+body{
+    background-color: gray;
+
+}
+
+.link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .fill-on-hover {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .fill-on-hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #00ff00;
+    transition: width 0.5s ease;
+    z-index: -1; /* Coloca o fundo abaixo do conteúdo do link */
+  }
+  
+  .fill-on-hover:hover::before {
+    width: 100%;
+  }
