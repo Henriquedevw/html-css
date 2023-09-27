@@ -9,25 +9,34 @@
     <h1>teste de formulario 2</h1>
     <form action="cadastro.php" method="post" autocomplete="on">
         
-    <p>
-        <label for="inome">nome</label>
-        <input type="text" name="nome" id="inome" required maxlength="40" placeholder="nome completo">
-    </p>
-
-    <p>
-        <label for="imedia">média</label>
-        <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1">
-    </p>
-
-    <p>
-        <label for="imes">periodo letivo</label>
-        <input type="month" name="mes" id="imes">
-    </p>
-
-    <p>
-        <label for="imedia">dia da prova</label>
-        <input type="date" name="dia" id="idia">
-    </p>
+    <fieldset>
+        <legend>dados pessoais</legend>
+        <p>
+            <label for="inome">nome:</label>
+            <input type="text" name="nome" id="inome" required maxlength="40" placeholder="nome completo">
+        </p>
+        <p>
+            <label for="imedia">média:</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1">
+        </p>
+        <p>
+            <label for="imes">periodo letivo:</label>
+            <input type="month" name="mes" id="imes">
+        </p>
+        <p>
+            <label for="idia">dia da prova:</label>
+            <input type="date" name="dia" id="idia">
+        </p>
+        <p>
+            <label for="iemail">email:</label>
+            <input type="email" name="email" id="iemail">
+        </p>
+        <p>
+            <label for="itel">cel:</label>
+            <input type="tel" name="cel"  id="itel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" autocomplete="tel">
+        </p>
+    </fieldset>
+    
         <input type="submit" value="enviar">    
 
     </form>
